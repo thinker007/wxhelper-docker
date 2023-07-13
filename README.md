@@ -26,4 +26,5 @@ docker run -d --restart unless-stopped --name wechat-service -p 8080:8080 -p 190
 ## 特别感谢
 感谢下列项目  
 https://github.com/ttttupup/wxhelper  
-https://github.com/furacas/DllInjector
+https://github.com/furacas/DllInjector  
+https://github.com/tom-snow/wechat-windows-versions
