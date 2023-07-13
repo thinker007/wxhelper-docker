@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+    wechat-service:
+        build: .
+        restart: unless-stopped
+        container_name: wechat-service
+        ports:
+            - "8080:8080"
+            - "19088:19088"
+        tty: true
