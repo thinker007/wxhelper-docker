@@ -1,11 +1,9 @@
 version: "3.3"
 
 services:
-    wechat-service:
+    wxhelper-docker:
         build: .
         restart: unless-stopped
-        container_name: wechat-service
-        ports:
-            - "8080:8080"
-            - "19088:19088"
+        container_name: wxhelper-docker
+        network_mode: host
         tty: true

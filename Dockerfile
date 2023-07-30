@@ -2,7 +2,7 @@ FROM furacas/wine-vnc-box:latest
 
 WORKDIR /home/app/.wine/drive_c
 
-ADD https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.2.23/WeChatSetup-3.9.2.23.exe WeChatSetup.exe
+ADD https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.5.81/WeChatSetup-3.9.5.81.exe WeChatSetup.exe
 
 COPY install-wechat.sh install-wechat.sh
 
@@ -14,11 +14,11 @@ RUN bash -c 'nohup /entrypoint.sh 2>&1 &' && \
      rm -rf install-wechat.sh
 
 
-ADD https://github.com/furacas/DllInjector/releases/download/v1.4.0/DllInjector.exe DllInjector.exe 
+ADD https://github.com/furacas/DllInjector/releases/download/v1.4.0/DllInjector64.exe DllInjector.exe
 
 RUN sudo chown app:app DllInjector.exe 
 
-ADD https://github.com/ttttupup/wxhelper/releases/download/3.9.2.23-v9/wxhelper.dll wxhelper.dll
+ADD https://github.com/ttttupup/wxhelper/releases/download/3.9.5.81-v5/wxhelper.dll wxhelper.dll
 
 RUN sudo chown app:app wxhelper.dll
 

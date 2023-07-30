@@ -5,9 +5,9 @@
 使用此项目可能会造成封号等后果。请自行承担风险。仅用于学习研究，请勿于非法用途。
 
 ## 项目介绍
-本项目是[wxhelper](https://github.com/ttttupup/wxhelper/tree/3.9.2.23-v9)的docker一键部署版本，自动完成微信的安装并注入。
+本项目是[wxhelper](https://github.com/ttttupup/wxhelper)的docker一键部署版本，自动完成微信的安装并注入。
 
-关于wxhelper的具体使用方法可以参考[wxhelper](https://github.com/ttttupup/wxhelper/tree/3.9.2.23-v9)的README
+关于wxhelper的具体使用方法可以参考[wxhelper](https://github.com/ttttupup/wxhelper)的README或对应分支的文档。
 
 
 ## 项目使用
@@ -15,7 +15,7 @@
 运行镜像
 
 ```
-docker run -d --restart unless-stopped --name wechat-service -p 8080:8080 -p 19088:19088 hxrbunny/wechat-service:latest
+docker run -d --restart unless-stopped --network host --name wechat-service hxrbunny/wxhelper-docker:latest
 ```
 浏览器访问 http://127.0.0.1:8080/vnc.html 扫码登录
 
