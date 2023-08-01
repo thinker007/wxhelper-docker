@@ -18,7 +18,7 @@ ADD https://github.com/furacas/DllInjector/releases/download/v1.4.0/DllInjector6
 
 RUN sudo chown app:app DllInjector.exe 
 
-ADD https://github.com/ttttupup/wxhelper/releases/download/3.9.5.81-v5/wxhelper.dll wxhelper.dll
+ADD https://github.com/ttttupup/wxhelper/releases/download/3.9.5.81-v6/wxhelper.dll wxhelper.dll
 
 RUN sudo chown app:app wxhelper.dll
 

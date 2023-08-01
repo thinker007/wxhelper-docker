@@ -15,7 +15,7 @@
 运行镜像
 
 ```
-docker run -d --rm -p 8080:8080 --add-host=host.docker.internal:host-gateway --name wechat-service hxrbunny/wxhelper-docker:latest
+docker run -d --rm -p 8080:8080 -p 19088:19088 --add-host=host.docker.internal:host-gateway --name wxhelper-docker hxrbunny/wxhelper-docker:latest
 ```
 浏览器访问 http://127.0.0.1:8080/vnc.html 扫码登录
 
@@ -26,7 +26,7 @@ docker run -d --rm -p 8080:8080 --add-host=host.docker.internal:host-gateway --n
 - 只支持AMD64架构，不支持ARM
 
 ## 特别感谢
-感谢下列项目  
+感谢下列项目,记得给大佬们点🌟  
 https://github.com/ttttupup/wxhelper  
 https://github.com/furacas/DllInjector  
 https://github.com/tom-snow/wechat-windows-versions
