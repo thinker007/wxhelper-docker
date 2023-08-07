@@ -9,5 +9,3 @@ services:
         ports:
             - 8080:8080
             - 19088:19088
-        extra_hosts:
-            - "host.docker.internal:host-gateway"
