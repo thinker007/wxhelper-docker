@@ -22,6 +22,7 @@ docker run -d --rm -p 8080:8080 -p 19088:19088 --name wxhelper-docker hxrbunny/w
 
 ## 特别注意
 - 只支持AMD64架构，不支持ARM
+- 如果你不了解docker的网络架构也不想了解，使用host模式启动可能是更好的方案。但是注意只有Linux支持host模式
 
 ## 特别感谢
 感谢下列项目,记得给大佬们点🌟  
