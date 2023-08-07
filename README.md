@@ -15,11 +15,9 @@
 运行镜像
 
 ```
-docker run -d --rm -p 8080:8080 -p 19088:19088 --add-host=host.docker.internal:host-gateway --name wxhelper-docker hxrbunny/wxhelper-docker:latest
+docker run -d --rm -p 8080:8080 -p 19088:19088 --name wxhelper-docker hxrbunny/wxhelper-docker:latest
 ```
 浏览器访问 http://127.0.0.1:8080/vnc.html 扫码登录
-
-你可以使用`host.docker.internal`这个特殊域名实现容器和宿主机的网络通信
 
 
 ## 特别注意
